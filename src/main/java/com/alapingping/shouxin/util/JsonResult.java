@@ -1,8 +1,11 @@
 package com.alapingping.shouxin.util;
 
+import java.util.List;
+
 public class JsonResult<T> {
 
     private T data;
+    private List<T> datas;
     private int code;
     private String msg;
 
@@ -17,6 +20,11 @@ public class JsonResult<T> {
         this.msg = msg;
     }
 
+    public JsonResult(List<T> datas, int code, String msg) {
+        this.datas = datas;
+        this.code = code;
+        this.msg = msg;
+    }
 
     public T getData() {
         return data;
@@ -40,5 +48,13 @@ public class JsonResult<T> {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public List<T> getDatas() {
+        return datas;
+    }
+
+    public void setDatas(List<T> datas) {
+        this.datas = datas;
     }
 }
