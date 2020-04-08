@@ -4,7 +4,7 @@
 
 <mapper namespace="com.alapingping.shouxin.mapper.MessageMapper">
     <select id="getAllMessages" resultType="com.alapingping.shouxin.entity.Message">
-		select * from `MESSAGE`
+		select * from `MESSAGE` order by time DESC
     </select>
     <insert id="addMessage" parameterType="com.alapingping.shouxin.entity.Message" >
         insert into MESSAGE(username, content, time) values (

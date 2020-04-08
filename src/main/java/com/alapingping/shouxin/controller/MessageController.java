@@ -27,9 +27,7 @@ public class MessageController {
         code = 200;
         if (messages != null) msg = "查询成功";
         else msg = "查询失败";
-        String s = messages.get(0).getTime().toString();
-        JsonResult<Message> result = new JsonResult<>(messages, code, msg);
-        return result;
+        return new JsonResult<>(messages, code, msg);
     }
 
     @PostMapping(value = "/publishMessage")

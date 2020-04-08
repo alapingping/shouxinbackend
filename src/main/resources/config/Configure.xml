@@ -20,5 +20,6 @@
     <mappers>
         <mapper resource="config/UserMapper.xml" />
         <mapper resource="config/MessageMapper.xml" />
+        <mapper resource="config/WordMapper.xml" />
     </mappers>
 </configuration>

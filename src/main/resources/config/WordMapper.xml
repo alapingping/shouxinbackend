@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alapingping.shouxin.mapper.WordMapper">
+    <select id="getAllWords" resultType="com.alapingping.shouxin.entity.Word">
+		select * from WORD
+    </select>
+    <select id="getWordsByCategory" parameterType="String" resultType="com.alapingping.shouxin.entity.Word">
+		select * from WORD where category = #{category}
+    </select>
+    <select id="getCategories" resultType="com.alapingping.shouxin.entity.Word">
+		select distinct category from WORD;
+    </select>
+</mapper>
