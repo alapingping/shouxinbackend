@@ -2,8 +2,6 @@ package com.alapingping.shouxin.entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.sql.Timestamp;
 
 public class Message {

@@ -9,7 +9,7 @@
     <select id="getWordsByCategory" parameterType="String" resultType="com.alapingping.shouxin.entity.Word">
 		select * from WORD where category = #{category}
     </select>
-    <select id="getCategories" resultType="com.alapingping.shouxin.entity.Word">
+    <select id="getCategories" resultType="String">
 		select distinct category from WORD;
     </select>
 </mapper>
