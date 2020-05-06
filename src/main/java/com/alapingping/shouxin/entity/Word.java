@@ -6,6 +6,7 @@ public class Word {
     private String name;
     private String description;
     private String pictureURL;
+    private char collected;
 
     public String getCategory() {
         return category;
@@ -39,4 +40,12 @@ public class Word {
         this.pictureURL = pictureURL;
     }
 
+
+    public char getCollected() {
+        return collected;
+    }
+
+    public void setCollected(char collected) {
+        this.collected = collected;
+    }
 }
